@@ -1,0 +1,14 @@
+===============================================
+Leap-Frogs Resource Rename - 20260326-155129
+===============================================
+
+Starting rename process...
+
+===============================================
+Rename Summary
+===============================================
+✓ Successfully renamed: 0 files/folders
+✗ Failed to rename: 0 files/folders
+
+Log saved to: /Volumes/Clay/GitHub/leap-frogs/rename-log-20260326-155129.txt
+[0;32mAll renames completed successfully![0m

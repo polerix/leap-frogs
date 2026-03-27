@@ -1,0 +1,86 @@
+============================================================
+Leap-Frogs Resource Rename - 20260326-155148
+============================================================
+
+📄 File: images/Crank.png
+✓ Renamed: images/Crank.png → images/crank.png
+
+📄 File: images/Crank@2x.png
+✓ Renamed: images/Crank@2x.png → images/crank@2x.png
+
+📄 File: images/LeapFrog_Table.png
+✓ Renamed: images/LeapFrog_Table.png → images/leapfrog-table.png
+
+📄 File: images/LeapFrog_Table@2x.png
+✓ Renamed: images/LeapFrog_Table@2x.png → images/leapfrog-table@2x.png
+
+📄 File: images/rotating_table.png
+✓ Renamed: images/rotating_table.png → images/rotating-table.png
+
+📄 File: images/rotating_table@2x.png
+✓ Renamed: images/rotating_table@2x.png → images/rotating-table@2x.png
+
+📄 File: images/table_outline.png
+✓ Renamed: images/table_outline.png → images/table-outline.png
+
+📄 File: images/frog_sprite.png
+✓ Renamed: images/frog_sprite.png → images/frog-sprite.png
+
+📄 File: images/frog_sprite@2x.png
+✓ Renamed: images/frog_sprite@2x.png → images/frog-sprite@2x.png
+
+📄 File: images/frog_sprite1.png
+✓ Renamed: images/frog_sprite1.png → images/frog-sprite-1.png
+
+📄 File: images/frog_sprite1@2x.png
+✓ Renamed: images/frog_sprite1@2x.png → images/frog-sprite-1@2x.png
+
+📄 File: images/frog_sprite2.png
+✓ Renamed: images/frog_sprite2.png → images/frog-sprite-2.png
+
+📄 File: images/frog_sprite2@2x.png
+✓ Renamed: images/frog_sprite2@2x.png → images/frog-sprite-2@2x.png
+
+📄 File: images/frog_sprite3.png
+✓ Renamed: images/frog_sprite3.png → images/frog-sprite-3.png
+
+📄 File: images/frog_sprite3@2x.png
+✓ Renamed: images/frog_sprite3@2x.png → images/frog-sprite-3@2x.png
+
+📄 File: images/basket_sprite@2x.png
+✓ Renamed: images/basket_sprite@2x.png → images/basket-sprite@2x.png
+
+📄 File: images/LeapFrog_Mockup.png
+✓ Renamed: images/LeapFrog_Mockup.png → images/leapfrog-mockup.png
+
+📄 File: images/LeapFrog_Mockup@2x.png
+✓ Renamed: images/LeapFrog_Mockup@2x.png → images/leapfrog-mockup@2x.png
+
+📄 File: images/LauncherUp.png
+✓ Renamed: images/LauncherUp.png → images/launcher-up.png
+
+📄 File: images/LauncherDown.png
+✓ Renamed: images/LauncherDown.png → images/launcher-down.png
+
+📄 File: LeapFrogs.ai
+✓ Renamed: LeapFrogs.ai → leapfrogs.ai
+
+📄 File: LeapFrogsBasket.ai
+✓ Renamed: LeapFrogsBasket.ai → leapfrogs-basket.ai
+
+📄 File: Leapfrogs Play Table.ai
+✓ Renamed: Leapfrogs Play Table.ai → leapfrogs-play-table.ai
+
+📄 File: Leapfrogs.gsheet
+✓ Renamed: Leapfrogs.gsheet → leapfrogs.gsheet
+
+📁 Directory: images.old
+✓ Renamed: images.old → images-old
+
+============================================================
+Rename Summary
+============================================================
+✓ Successfully renamed: 25 files/folders
+✗ Failed to rename: 0 files/folders
+
+Log saved to: /Volumes/Clay/GitHub/leap-frogs/rename-log-20260326-155148.txt
