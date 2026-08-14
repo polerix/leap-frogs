@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap-frogs Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="game-viewport">
+        <!-- Adaptive Background -->
+        <div class="background-gradient"></div>
+        <div class="background-table-base"></div>
+
+        <main id="game-container">
+            <!-- Central Play Area -->
+            <div id="play-table-container">
+                <img src="./images-old/PlayTable.svg" id="play-table" alt="Play Table">
+                <div id="launcher-platter-container">
+                    <img src="./images-old/LauncherPlatterPunched.svg" id="launcher-platter" alt="Launcher Platter">
+                    <!-- Frogs will be spawned here -->
+                    <div id="frogs-container"></div>
+                </div>
+            </div>
+
+            <!-- Foreground Controls -->
+            <div id="crank-container">
+                <img src="./images-old/Crank.svg" id="crank-handle" alt="Crank Handle">
+            </div>
+
+            <!-- Scoreboard -->
+            <div id="score-display">Score: <span id="score-value">0</span></div>
+
+            <!-- Player Net -->
+            <div id="net-container">
+                <img src="./images-old/LeapFrogsBasket.svg" id="player-net" alt="Net Bucket">
+            </div>
+        </main>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
