@@ -1,42 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leap-frogs Game</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div id="game-viewport">
-        <!-- Adaptive Background -->
-        <div class="background-gradient"></div>
-        <div class="background-table-base"></div>
-
-        <main id="game-container">
-            <!-- Central Play Area -->
-            <div id="play-table-container">
-                <img src="./images-old/PlayTable.svg" id="play-table" alt="Play Table">
-                <div id="launcher-platter-container">
-                    <img src="./images-old/LauncherPlatterPunched.svg" id="launcher-platter" alt="Launcher Platter">
-                    <!-- Frogs will be spawned here -->
-                    <div id="frogs-container"></div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#082d48" />
+    <title>Leap Frogs • Catch the jump!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="./">LEAP<span>FROGS</span><i>ARCADE</i></a>
+        <div class="tools">
+          <button id="sound" aria-label="Turn sound on">Sound off</button
+          ><button id="pause" disabled>Pause</button
+          ><button id="fullscreen" aria-label="Toggle fullscreen">⛶</button>
+        </div>
+      </header>
+      <section id="stage" aria-label="Frog catching game">
+        <canvas
+          id="game"
+          width="1200"
+          height="760"
+          aria-label="Move your mouse to catch falling frogs in the basket"
+        ></canvas>
+        <div id="overlay">
+          <div class="card">
+            <div class="eyebrow" id="eyebrow">STEP RIGHT UP</div>
+            <h1 id="title">Catch the<br /><em>jump!</em></h1>
+            <p id="description">
+              The turntable is spinning. The frogs are flying.<br />How many can
+              you bring home?
+            </p>
+            <div id="instructions">
+              <span><b>01</b> Move your mouse to guide the basket</span
+              ><span><b>02</b> Catch frogs as they come down</span
+              ><span><b>03</b> Keep a streak for bonus points</span>
             </div>
-
-            <!-- Foreground Controls -->
-            <div id="crank-container">
-                <img src="./images-old/Crank.svg" id="crank-handle" alt="Crank Handle">
-            </div>
-
-            <!-- Scoreboard -->
-            <div id="score-display">Score: <span id="score-value">0</span></div>
-
-            <!-- Player Net -->
-            <div id="net-container">
-                <img src="./images-old/LeapFrogsBasket.svg" id="player-net" alt="Net Bucket">
-            </div>
-        </main>
-    </div>
+            <button id="start-btn" class="primary" disabled>
+              Loading graphics…
+            </button>
+            <p class="small" id="hint">
+              60 seconds · unlimited misses · endless ribbits
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <span>MOVE MOUSE <b>to catch</b></span
+        ><span
+          >P <b>pause</b> <span class="dot">·</span> F <b>fullscreen</b></span
+        ><span>YOUR LOCAL POND ARCADE</span>
+      </footer>
+    </main>
     <script type="module" src="./main.js"></script>
-</body>
+  </body>
 </html>
