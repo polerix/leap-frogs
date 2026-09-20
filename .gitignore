@@ -6,3 +6,7 @@ build/
 .idea/
 
 output/
+tmp/
+
+# Local research archive; the derived skill-gate report is force-added.
+stonetronix-documents/

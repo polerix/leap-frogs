@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#082d48" />
-    <title>Leap Frogs • Catch the jump!</title>
+    <title>Leap Frogs • The 1979 pond game returns</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
       <header>
-        <a class="brand" href="./">LEAP<span>FROGS</span><i>ARCADE</i></a>
+        <a class="brand" href="./">LEAP<span>FROGS</span><i>1979 REMAKE</i></a>
         <div class="tools">
           <button id="sound" aria-label="Turn sound on">Sound off</button
           ><button id="pause" disabled>Pause</button
@@ -22,35 +22,55 @@
           id="game"
           width="1200"
           height="760"
-          aria-label="Move your mouse to catch falling frogs in the basket"
+          aria-label="Move the yellow net to catch frogs in mid-air before the blue net"
         ></canvas>
         <div id="overlay">
           <div class="card">
-            <div class="eyebrow" id="eyebrow">STEP RIGHT UP</div>
-            <h1 id="title">Catch the<br /><em>jump!</em></h1>
+            <div class="eyebrow" id="eyebrow">SCHAPER 1979 · TABLE MODE</div>
+            <h1 id="title">Wind it.<br /><em>Catch them!</em></h1>
             <p id="description">
-              The turntable is spinning. The frogs are flying.<br />How many can
-              you bring home?
+              Ten frogs. Two nets. Most catches wins.<br />Just like the
+              tabletop original.
             </p>
             <div id="instructions">
-              <span><b>01</b> Move your mouse to guide the basket</span
-              ><span><b>02</b> Catch frogs as they come down</span
-              ><span><b>03</b> Keep a streak for bonus points</span>
+              <span
+                ><b>01</b> Move your mouse or finger to guide the yellow
+                net</span
+              ><span
+                ><b>02</b> Catch frogs in mid-air—floor catches do not
+                count</span
+              ><span id="opponent-rule"
+                ><b>03</b> Beat the clockwork blue net before all ten frogs are
+                gone</span
+              >
+            </div>
+            <div id="setup-options">
+              <label for="opponent-mode">
+                <span>BLUE NET</span>
+                <select id="opponent-mode">
+                  <option value="ai" selected>Clockwork rival</option>
+                  <option value="local">Second player</option>
+                </select>
+              </label>
             </div>
             <button id="start-btn" class="primary" disabled>
               Loading graphics…
             </button>
-            <p class="small" id="hint">
-              60 seconds · unlimited misses · endless ribbits
-            </p>
+            <p class="small" id="hint">Wind-up play · no batteries required</p>
           </div>
         </div>
       </section>
+      <section id="rotate-hint" aria-label="Rotate device to play">
+        <span aria-hidden="true">↻</span>
+        <h2>Turn the table</h2>
+        <p>Rotate your phone sideways to give both nets room to play.</p>
+      </section>
+      <div id="live-status" class="sr-only" aria-live="polite"></div>
       <footer>
-        <span>MOVE MOUSE <b>to catch</b></span
+        <span>MOVE POINTER <b>yellow net</b></span
         ><span
           >P <b>pause</b> <span class="dot">·</span> F <b>fullscreen</b></span
-        ><span>YOUR LOCAL POND ARCADE</span>
+        ><span>WIND · SWITCH · CATCH</span>
       </footer>
     </main>
     <script type="module" src="./main.js"></script>

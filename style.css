@@ -7,6 +7,17 @@
 * {
   box-sizing: border-box;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 body {
   margin: 0;
   min-height: 100vh;
@@ -76,6 +87,9 @@ button:disabled {
   box-shadow: 0 25px 70px #00152566;
   background: #103d53;
 }
+#rotate-hint {
+  display: none;
+}
 canvas {
   display: block;
   width: 100%;
@@ -137,6 +151,36 @@ p {
   color: #ffe44f;
   margin-right: 12px;
   font-size: 11px;
+}
+#setup-options {
+  display: flex;
+  justify-content: center;
+  margin: -11px 0 24px;
+}
+#setup-options label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #a6c8ce;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+#opponent-mode {
+  appearance: none;
+  min-width: 158px;
+  color: #fff9df;
+  background: #153f54
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23ffe44f' stroke-width='2'/%3E%3C/svg%3E")
+    no-repeat right 12px center;
+  border: 1px solid #537486;
+  border-radius: 8px;
+  padding: 9px 34px 9px 12px;
+  font: 700 12px Arial;
+}
+#opponent-mode:focus-visible {
+  outline: 3px solid #ffe44f;
+  outline-offset: 3px;
 }
 .primary {
   background: #ffe44f;
@@ -246,11 +290,119 @@ footer b {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 650px) and (orientation: landscape) {
   main {
     width: 100%;
   }
   #stage.playing canvas {
     min-height: 0;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  main {
+    width: min(100%, calc((100dvh - 54px) * 1.578947 + 20px));
+    padding: 0 10px;
+  }
+  header {
+    height: 54px;
+  }
+  .brand {
+    font-size: 20px;
+  }
+  .brand i {
+    margin-left: 9px;
+  }
+  .tools button {
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+  #stage {
+    border-radius: 14px;
+  }
+  #stage.playing canvas {
+    min-height: 0;
+  }
+  .card {
+    width: 100%;
+    padding: 8px 5%;
+  }
+  .eyebrow {
+    font-size: 8px;
+  }
+  h1 {
+    margin: 5px 0;
+    font-size: 36px;
+    line-height: 0.92;
+    letter-spacing: -2px;
+  }
+  p {
+    margin: 5px 0;
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  #instructions {
+    gap: 4px;
+    margin: 7px 0;
+    font-size: 10px;
+  }
+  #instructions b {
+    margin-right: 7px;
+    font-size: 9px;
+  }
+  #setup-options {
+    margin: 5px 0 8px;
+  }
+  #setup-options label {
+    gap: 8px;
+    font-size: 8px;
+  }
+  #opponent-mode {
+    min-width: 136px;
+    padding: 6px 30px 6px 10px;
+    font-size: 10px;
+  }
+  .primary {
+    padding: 10px 22px;
+    font-size: 12px;
+  }
+  .small {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) and (orientation: portrait) {
+  #stage,
+  footer {
+    display: none;
+  }
+  #rotate-hint {
+    min-height: calc(100dvh - 88px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px;
+    text-align: center;
+    border: 1px solid #587f8c;
+    border-radius: 18px;
+    background: radial-gradient(circle at 50% 38%, #19566e, #082e49 70%);
+  }
+  #rotate-hint span {
+    color: #ffe44f;
+    font-size: 72px;
+    line-height: 1;
+  }
+  #rotate-hint h2 {
+    margin: 24px 0 8px;
+    color: #fff9df;
+    font-size: 32px;
+  }
+  #rotate-hint p {
+    max-width: 270px;
+    margin: 0;
   }
 }
